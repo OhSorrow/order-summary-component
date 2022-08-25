@@ -33,7 +33,7 @@ As well as making it responsive for small phones, I tried to make it good lookin
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Ordar Summary Component](https://ohsorrow.github.io/order-summary-component/)
 
 ### Built with
 
