@@ -1,0 +1,224 @@
+/* IMPORTING FONT FROM GOOGLE FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* DECLARING VARIABLES (COLORS) */
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* BASIC CSS RESETS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 900;
+  width: 80%;
+  border: none;
+  border-radius: 12px;
+}
+
+/* MAIN STYLES */
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-size: 100% 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: var(--desaturated-blue);
+  background-color: white;
+  width: 450px;
+  height: auto;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 15px 50px -25px var(--bright-blue);
+}
+
+.title {
+  margin: 1.5rem 0 1.2rem 0;
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  width: 80%;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.plan {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+  background-color: var(--very-pale-blue);
+  width: 80%;
+  height: 75px;
+  border-radius: 12px;
+  margin: 1.75rem 0 2rem 0;
+  padding: 3rem 1rem;
+  white-space: nowrap;
+}
+
+.plan strong {
+  font-weight: 900;
+}
+
+.annual-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.price {
+  font-weight: 500;
+  color: var(--desaturated-blue);
+  margin: 0.25rem;
+}
+
+.change {
+  width: auto;
+  background: none;
+  font-weight: 700;
+}
+
+.change a,
+.change a:visited {
+  color: var(--bright-blue);
+}
+
+.change a:hover,
+.change a:active {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.proceed-button {
+  box-shadow: 0 10px 30px -6px rgba(0, 0, 255, 0.365);
+}
+
+.proceed-button a {
+  display: block;
+  border-radius: 12px;
+  padding: 1rem 0;
+}
+
+.proceed-button a,
+.proceed-button a:visited {
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  text-decoration: none;
+}
+
+.proceed-button a:hover,
+.proceed-button a:active {
+  background-color: hsl(245, 78%, 35%);
+}
+
+.cancel-button {
+  background: none;
+  color: var(--desaturated-blue);
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.cancel-button a,
+.cancel-button a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cancel-button a:hover,
+.cancel-button a:active {
+  color: var(--dark-blue);
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN */
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .title {
+    font-size: 1.7rem;
+    margin: 1.5rem 0 1.2rem 0;
+  }
+
+  .plan {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
+
+  .annual-container {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .title {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1.2rem 0;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .plan {
+    font-size: 0.8rem;
+    padding: 2rem 1rem;
+  }
+
+  .annual-container {
+    gap: 0.75rem;
+  }
+
+  .annual-container img {
+    width: 36px;
+    height: 36px;
+  }
+
+  button {
+    font-size: 0.7rem;
+  }
+}
