@@ -33,14 +33,13 @@ As well as making it responsive for small phones, I tried to make it good lookin
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Ordar Summary Component](https://ohsorrow.github.io/order-summary-component/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
--
 
 ### What I learned
 
@@ -84,4 +83,4 @@ Since I learned a lot on this project, I'm looking forward to trying more challe
 
 - Telegram - [Aram Moradian](https://t.me/OhSorrow)
 - Frontend Mentor - [@OhSorrow](https://www.frontendmentor.io/profile/OhSorrow)
-- GitHub - [OhSorrow](https://www.twitter.com/yourusername)
+- GitHub - [OhSorrow](https://github.com/OhSorrow)
