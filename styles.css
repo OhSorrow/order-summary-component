@@ -113,58 +113,59 @@ body {
 }
 
 .change {
+  cursor: pointer;
   width: auto;
   background: none;
   font-weight: 700;
 }
 
-.change a,
-.change a:visited {
+.change,
+.change:visited {
+  text-decoration: underline;
   color: var(--bright-blue);
 }
 
-.change a:hover,
-.change a:active {
+.change:hover,
+.change:active {
   opacity: 0.8;
   text-decoration: none;
 }
 
 .proceed-button {
   box-shadow: 0 10px 30px -6px rgba(0, 0, 255, 0.365);
-}
-
-.proceed-button a {
   display: block;
   border-radius: 12px;
   padding: 1rem 0;
+  cursor: pointer;
 }
 
-.proceed-button a,
-.proceed-button a:visited {
+.proceed-button,
+.proceed-button:visited {
   background-color: var(--bright-blue);
   color: var(--very-pale-blue);
   text-decoration: none;
 }
 
-.proceed-button a:hover,
-.proceed-button a:active {
+.proceed-button:hover,
+.proceed-button:active {
   background-color: hsl(245, 78%, 35%);
 }
 
 .cancel-button {
+  cursor: pointer;
   background: none;
   color: var(--desaturated-blue);
   margin: 1.5rem 0 1.5rem 0;
 }
 
-.cancel-button a,
-.cancel-button a:visited {
+.cancel-button,
+.cancel-button:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.cancel-button a:hover,
-.cancel-button a:active {
+.cancel-button:hover,
+.cancel-button:active {
   color: var(--dark-blue);
 }
 
