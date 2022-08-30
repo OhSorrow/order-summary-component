@@ -126,7 +126,7 @@ body {
 }
 
 .change:hover,
-.change:active {
+.change:focus {
   opacity: 0.8;
   text-decoration: none;
 }
@@ -147,7 +147,7 @@ body {
 }
 
 .proceed-button:hover,
-.proceed-button:active {
+.proceed-button:focus {
   background-color: hsl(245, 78%, 35%);
 }
 
@@ -165,7 +165,7 @@ body {
 }
 
 .cancel-button:hover,
-.cancel-button:active {
+.cancel-button:focus {
   color: var(--dark-blue);
 }
 
